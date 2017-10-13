@@ -5,12 +5,12 @@
 The Python Intro Physics Solver (PIPS) is designed to work as a basic model for introductory level physics problems. Uniting newtonian physics and basic electricity and magnetism. It is as simple as plugging in the problem you have then the solution will be plotted for you to visually understand what is happening. The goal is to give a intuitive visual representation of what is happening in the problem provided. PIPS can also be used as a basic physics model to look at how objects interact under a set of conditions.
 
 ### Things done
-[x] - Readme!
+- [x] Readme!
 
 ### Things to be done
-[] - Make an accurate physics model with the ability to handle newtonian mechanics and basic E+M.
-[] - Develop a system to interpret a problem to be fed into the model for a solution.
-[] - And more, PIPS is looking for developers!
+- [ ] Make an accurate physics model with the ability to handle newtonian mechanics and basic E+M.
+- [ ] Develop a system to interpret a problem to be fed into the model for a solution.
+- [ ] And more, PIPS is looking for developers!
 
 ## Audience
 The targeted audience for PIPS are the people who are interested in visualizing the kinematics or electricity/magnetism problem they are working on. It should be known that you aren't expected to know how to program in python, only to launch a python application.
