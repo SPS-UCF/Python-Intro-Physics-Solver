@@ -27,7 +27,7 @@ Est ante in nibh mauris cursus mattis. Id aliquet risus feugiat in ante metus di
 Est ante in nibh mauris cursus mattis. Id aliquet risus feugiat in ante metus dictum at. Sit amet porttitor eget dolor morbi non arcu risus. Massa eget egestas purus viverra accumsan in nisl nisi. Urna et pharetra pharetra massa massa ultricies mi quis. Eu scelerisque felis imperdiet proin.
 
 # Contributing
-Est ante in nibh mauris cursus mattis. Id aliquet risus feugiat in ante metus dictum at. Sit amet porttitor eget dolor morbi non arcu risus. Massa eget egestas purus viverra accumsan in nisl nisi. Urna et pharetra pharetra massa massa ultricies mi quis. Eu scelerisque felis imperdiet proin.
+Contributions far and wide are accepted. Check the [contributing file](https://github.com/SPS-UCF/Python-Intro-Physics-Solver/blob/master/CONTRIBUTING.MD) to find out how.
 
 # Licensing
 ----------------------
