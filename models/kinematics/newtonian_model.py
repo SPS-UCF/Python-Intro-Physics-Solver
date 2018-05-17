@@ -12,7 +12,7 @@ import math
 
 def distance(initial_vel, accl, time):
 	"""
-	Calculates the distance traveled given the inital velocity acceleration and time
+	Calculates the distance traveled given the inital velocity, acceleration, and time
 	
 	:param initial_vel: Integer initial velocity
 	:param accl: Integer acceleration
@@ -24,7 +24,7 @@ def distance(initial_vel, accl, time):
 
 def vel_final_dist(initial_vel, accl, dist):
 	"""
-	Calcuates the final velocity given the initial velocity, acceleration and the distance traveled.
+	Calculates the final velocity given the initial velocity, acceleration and the distance traveled.
 	
 	:param initial_vel: Integer initial velocity
 	:param accl: Integer acceleration
@@ -32,7 +32,7 @@ def vel_final_dist(initial_vel, accl, dist):
 	
 	:return: final velocity
 	"""
-	return initial_vel ** 2 + 2 * accl * dist
+	return (initial_vel ** 2 + 2 * accl * dist) ** 0.5
 	
 	
 def vel_final_time(initial_vel, accl, time):
@@ -46,29 +46,16 @@ def vel_final_time(initial_vel, accl, time):
 	:return: final velocity
 	"""
 	return initial_vel + accl * time
-
-
-def height(initial_vel, initial_h, g, time):
-	"""
-	Height function of time H(t) = - (1 / 2) g t 2 + Vo t + Ho
-	
-	:param initial_vel: Integer initial velocity
-	:param initial_h: Integer initial height
-	:param g: Integer acceleration due to gravity
-	:param time: Integer input time
-	:return: height
-	"""
-	return -(1/2) * g * time ** 2 + initial_vel * time + initial_h
 	
 	
-def horizontal_range(initial_vel, g, angle):
+def horizontal_range(initial_vel, angle, g=9.81):
 	"""
 	Find the range of the particle based on the angle of launch and initial velocity.
 	
 	:param initial_vel: Integer initial velocity
-	:param g: Integer acceleration due to gravity
 	:param angle: Integer launch angle
-	
+	:param g: Integer acceleration due to gravity
+
 	:return: Range
 	"""
 	return initial_vel ** 2 * math.sin(2 * angle) / g
