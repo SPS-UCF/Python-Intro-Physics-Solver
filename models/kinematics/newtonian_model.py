@@ -7,8 +7,8 @@ Model for newtonian physics.
 In this module are functions that are associated with the basic kinematic equations in physics 1. These functions
 calculate either the distance or velocity given initial conditions of time/distance acceleration, and initial velocity.
 
-Currently this module needs to be expanded to find more than just the final distance and velocity. Ideally, eventually it
-will be expanded to include equations to solve for initial conditions or different final conditions.
+Currently this module needs to be expanded to find more than just the final distance and velocity. Ideally, eventually
+it will be expanded to include equations to solve for initial conditions or different final conditions.
 
 """
 
@@ -133,13 +133,13 @@ def horizontal_range_helper(initial_velocity, angle, g=9.81):
 	horizontal_range function.
 
 	:param initial_velocity: Integer initial velocity
-	:param angle: Integer launch angle
+	:param angle: Integer launch angle in degrees
 	:param g: Integer acceleration due to gravity
 
 	:return: Range
 	"""
 
-	horizon_range = initial_velocity ** 2 * np.sin(2 * angle) / g
+	horizon_range = initial_velocity ** 2 * np.sin(2 * np.deg2rad(angle)) / g
 	return horizon_range
 
 
@@ -149,16 +149,16 @@ def maximum_height(initial_velocity, angle, initial_height=0, g=9.81):
 	of the particle.
 
 	:param initial_velocity: Integer initial velocity
-	:param angle: Integer launch angle
+	:param angle: Integer launch angle in degrees
 	:param initial_height: Integer initial height, default 0
-	:param g: Integer acceleration due to gravity
+	:param g: Float acceleration due to gravity
 
 	:return: Max Height
 	"""
 
 	plt.trajectory_plotter(initial_velocity, angle, g, initial_height)
 
-	return maximum_height_helper(initial_velocity, angle, g)
+	return maximum_height_helper(initial_velocity, angle, g=g)
 
 
 def maximum_height_helper(initial_velocity, angle, initial_height=0, g=9.81):
@@ -167,11 +167,11 @@ def maximum_height_helper(initial_velocity, angle, initial_height=0, g=9.81):
 	to the maximum_height function.
 
 	:param initial_velocity: Integer initial velocity
-	:param angle: Integer launch angle
+	:param angle: Integer launch angle in degrees
 	:param initial_height: Integer initial height, default 0
 	:param g: Integer acceleration due to gravity, default 9.81
 
 	:return: Max Height
 	"""
-	max_height = (initial_velocity ** 2 * np.sin(angle) ** 2) / (g * 2)
+	max_height = (initial_velocity ** 2 * np.sin(np.deg2rad(angle)) ** 2) / (g * 2)
 	return max_height

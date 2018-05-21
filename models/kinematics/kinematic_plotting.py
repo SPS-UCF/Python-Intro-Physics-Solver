@@ -109,7 +109,7 @@ def trajectory_plotter(initial_velocity, angle, g, initial_height=0):
 	:return: None
 	"""
 
-	initial_y_velocity = initial_velocity * np.sin(angle)
+	initial_y_velocity = initial_velocity * np.sin(np.deg2rad(angle))
 	t_rise = initial_y_velocity / g
 
 	t_fall = (2 * km.maximum_height_helper(initial_velocity, angle, g) / g) ** 0.5
