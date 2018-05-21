@@ -5,14 +5,11 @@ on 5/17/18
 
 Test cases for the newtonian model functions
 """
-import unittest
 from models.kinematics.newtonian_model import *
+import unittest
 
 
 class TestNewtonian(unittest.TestCase):
-	
-	def setUp(self):
-		pass
 	
 	def test_distance(self):
 		"""
