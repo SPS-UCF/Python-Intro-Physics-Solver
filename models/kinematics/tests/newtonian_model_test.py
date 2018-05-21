@@ -41,7 +41,15 @@ class TestNewtonian(unittest.TestCase):
 		with theta = 45 deg and initial velocity of 5 m/s
 		"""
 		print(horizontal_range(5, 45))
-		self.assertAlmostEqual(horizontal_range(5, 45), 2.278, places=3)
+		self.assertAlmostEqual(horizontal_range(5, 45), 2.548, places=3)
+
+	def test_maximum_height(self):
+		"""
+		Simple test to assert the maximum range of a projectile given it's initial velocity and angle. Tested by hand
+		with theta = 45, and initial velocity = 5 m/s and g = 9.81 m/s^2. up to 3 decimal places
+		"""
+		print(maximum_height(5, 45))
+		self.assertAlmostEqual(maximum_height(5, 45), 0.637, places=3)
 
 
 if __name__ == '__main__':
