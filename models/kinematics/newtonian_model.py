@@ -13,7 +13,8 @@ from models.kinematics import kinematic_plotting as plt
 
 def distance(initial_vel, accl, time):
 	"""
-	Calculates the distance traveled given the initial velocity, acceleration, and time
+	Calculates the distance traveled given the initial velocity, acceleration, and time then plots the distance traveled
+	with respect to time.
 	
 	:param initial_vel: Integer initial velocity
 	:param accl: Integer acceleration
@@ -25,6 +26,7 @@ def distance(initial_vel, accl, time):
 	plt.distance_plotter(initial_vel, accl, time)
 	
 	return distance_helper(initial_vel, accl, time)
+
 
 def distance_helper(initial_vel, accl, time):
 	"""
@@ -40,6 +42,7 @@ def distance_helper(initial_vel, accl, time):
 	dist = initial_vel * time + 0.5 * (accl * time ** 2)
 	return dist
 
+
 def vel_final_dist(initial_vel, accl, dist):
 	"""
 	Calculates the final velocity given the initial velocity, acceleration and the distance traveled.
@@ -50,10 +53,26 @@ def vel_final_dist(initial_vel, accl, dist):
 	
 	:return: final velocity
 	"""
+	plt.vel_final_dist_plotter(initial_vel, accl, dist)
+
+	return vel_final_dist_helper(initial_vel, accl, dist)
+
+
+def vel_final_dist_helper(initial_vel, accl, dist):
+	"""
+	Calculates the final velocity given the initial velocity, acceleration and the distance traveled. And is a helper
+	function to be called by vel_final_dist()
+
+	:param initial_vel: Integer initial velocity
+	:param accl: Integer acceleration
+	:param dist: Integer distance traveled
+
+	:return: final velocity
+	"""
 	vel = (initial_vel ** 2 + 2 * accl * dist) ** 0.5
 	return vel
-	
-	
+
+
 def vel_final_time(initial_vel, accl, time):
 	"""
 	Calculates the final velocity given the initial velocity, acceleration, and time traveled.
