@@ -1,6 +1,5 @@
-#!/usr/bin/env python
 """
-Created by alex 
+Created by Alex Hopkins
 on 5/17/18
 
 Test cases for the newtonian model functions

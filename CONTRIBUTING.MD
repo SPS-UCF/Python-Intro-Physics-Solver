@@ -1,5 +1,5 @@
 # Contributing
-Contributing is accepted from anyone! Follow the proceesses below to contribute.
+Contributing is accepted from anyone! Follow the processes below to contribute.
 
 ## Pull Request Process
 1. Fork the Repository from [here](https://github.com/SPS-UCF/Python-Intro-Physics-Solver) into your own GitHub account. (add graphics later)

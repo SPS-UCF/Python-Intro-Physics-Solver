@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """
 Created on 10/19/17
 
@@ -12,7 +11,7 @@ it will be expanded to include equations to solve for initial conditions or diff
 
 """
 
-from models.kinematics import kinematic_plotting as plt
+from models.kinematics import kinematic_plotting as kplt
 import numpy as np
 
 
@@ -28,7 +27,7 @@ def distance(initial_velocity, acceleration, time):
 	:return: Integer distance traveled
 	"""
 	
-	plt.distance_plotter(initial_velocity, acceleration, time)
+	kplt.distance_plotter(initial_velocity, acceleration, time)
 	
 	return distance_helper(initial_velocity, acceleration, time)
 
@@ -59,7 +58,7 @@ def vel_final_dist(initial_velocity, acceleration, dist):
 	
 	:return: final velocity
 	"""
-	plt.vel_final_dist_plotter(initial_velocity, acceleration, dist)
+	kplt.vel_final_dist_plotter(initial_velocity, acceleration, dist)
 
 	return vel_final_dist_helper(initial_velocity, acceleration, dist)
 
@@ -90,7 +89,7 @@ def vel_final_time(initial_velocity, acceleration, time):
 	
 	:return: final velocity
 	"""
-	plt.vel_final_time_plotter(initial_velocity, acceleration, time)
+	kplt.vel_final_time_plotter(initial_velocity, acceleration, time)
 
 	return vel_final_time_helper(initial_velocity, acceleration, time)
 
@@ -122,7 +121,7 @@ def horizontal_range(initial_velocity, angle, g=9.81):
 	:return: Range
 	"""
 
-	plt.trajectory_plotter(initial_velocity, angle, g)
+	kplt.trajectory_plotter(initial_velocity, angle, g)
 
 	return horizontal_range_helper(initial_velocity, angle, g)
 
@@ -156,7 +155,7 @@ def maximum_height(initial_velocity, angle, initial_height=0, g=9.81):
 	:return: Max Height
 	"""
 
-	plt.trajectory_plotter(initial_velocity, angle, g, initial_height)
+	kplt.trajectory_plotter(initial_velocity, angle, g, initial_height)
 
 	return maximum_height_helper(initial_velocity, angle, g=g)
 
