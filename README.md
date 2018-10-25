@@ -12,20 +12,23 @@ We also need people to play around with the project and break it. If you find so
 The targeted audience for PIPS are the people who are interested in visualizing the kinematics or electricity/magnetism problem they are working on. It should be known that you aren't expected to know how to program in python, only to launch a python application.
 
 ## Getting Started
-Est ante in nibh mauris cursus mattis. Id aliquet risus feugiat in ante metus dictum at. Sit amet porttitor eget dolor morbi non arcu risus. Massa eget egestas purus viverra accumsan in nisl nisi. Urna et pharetra pharetra massa massa ultricies mi quis. Eu scelerisque felis imperdiet proin.
+Currently the project's interface works through the terminal. The models are a work in progress and thus are limited, but you can play with what we have to contribute to them or to test.
 
+To run the project you will need to download/clone the project, then run the interface_main.py file
+ 
 #### Installing
-Is allowance instantly strangers applauded discourse so. Separate entrance welcomed sensible laughing why one moderate shy. We seeing piqued garden he. As in merry at forth least ye stood. And cold sons yet with. Delivered middleton therefore me at. Attachment companions man way excellence how her pianoforte.
+To install the package you should download or clone the project from github. Then be sure that you have Python3, matplotlib, and numpy installed on your machine
 
 #### Prerequisites
 * Python3
+* Numpy
+* Matplotlib
 
 #### Anaconda
-Est ante in nibh mauris cursus mattis. Id aliquet risus feugiat in ante metus dictum at. Sit amet porttitor eget dolor morbi non arcu risus. Massa eget egestas purus viverra accumsan in nisl nisi. Urna et pharetra pharetra massa massa ultricies mi quis. Eu scelerisque felis imperdiet proin.
-
+If you have anaconda3 installed you do not need to worry about the prerequisites. You can download anaconda3 [here](https://www.anaconda.com/download/)
 # Getting Help
-Est ante in nibh mauris cursus mattis. Id aliquet risus feugiat in ante metus dictum at. Sit amet porttitor eget dolor morbi non arcu risus. Massa eget egestas purus viverra accumsan in nisl nisi. Urna et pharetra pharetra massa massa ultricies mi quis. Eu scelerisque felis imperdiet proin.
-
+If you need help getting the software to run please create an issue on the [issues tab](https://github.com/SPS-UCF/Python-Intro-Physics-Solver/issues)
+In there specify what you are trying to do and what you have tried to do and we will get back to you with a fix or helpful instructions. Or if you need help that isn't related to the code of the project you can email hopkinsalex@knights.ucf.edu for questions on the project.
 # Contributing
 Contributions far and wide are accepted. Check the [contributing file](https://github.com/SPS-UCF/Python-Intro-Physics-Solver/blob/master/CONTRIBUTING.MD) to find out how.
 
