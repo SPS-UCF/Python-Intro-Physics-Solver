@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 import numpy as np
 
+
 def e_field_plotter(nq):
     # Grid of x, y points
     nx, ny = 64, 64

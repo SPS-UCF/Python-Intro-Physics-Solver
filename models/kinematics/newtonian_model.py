@@ -64,7 +64,7 @@ def vel_final_dist(initial_velocity, acceleration, dist):
 
 
 def vel_final_dist_helper(initial_velocity, acceleration, dist):
-	"""
+	"""f
 	Calculates the final velocity given the initial velocity, acceleration and the distance traveled. And is a helper
 	function to be called by vel_final_dist()
 
